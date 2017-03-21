@@ -26,7 +26,11 @@ else
 		
 		PROJECT_TARGET_PATH="$target_dir/$project_name_escaped"
 		
-		echo "$PROJECT_TARGET_PATH"
+		#No spaces allowed for the project name since it will be on one of the tags
+		if [ "$project_name_escaped" != "$2" ]; then
+			echo -e "\n>>Error: No spaces allowed for the project name, it'll be in one TeX tag and can't use it, please use other character as underscore.\n\n"
+			exit 1
+		fi
 		
 		if [ -z "$4" ]; then			
 			if [ -d "$PROJECT_TARGET_PATH" ]; then #If project dir already exists
@@ -34,9 +38,10 @@ else
 				exit 1 #No overwrite allowed, terminate script							
 			fi
 		else
+		echo "------------rm -r $PROJECT_TARGET_PATH--------------"
 			if [ "$4" == "overwrite" ]; then #Confirm wan'ts overwrite if already exists a same name folder
 				if [ -d "$PROJECT_TARGET_PATH" ]; then #If project dir already exists
-					echo "Overwriting same project name folder..."
+					echo "Overwriting same project name folder..."					
 					eval "rm -r $PROJECT_TARGET_PATH"	
 				fi
 			else
@@ -56,10 +61,9 @@ else
 		
 		echo "Passing Tex formats to the Tex structure..."
 		eval "cat p1_content > \"$project_name_escaped\"/desarrollo.tex"
-		
-		echo "target: $target_dir, project: $project_name_escaped, images: $images_dir"
+				
 		echo "Putting name to the TeX project..."
-		eval "cd \"$project_name_escaped\""
+		eval "cd \"$project_name_escaped\"/"
 		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$project_name\3/' main.tex"
 		cd ..
 		eval "mv \"$project_name_escaped\"/main.tex \"$project_name_escaped\"/\"$project_name.tex\""
@@ -69,7 +73,7 @@ else
 		eval "cp -r \"$images_dir\" \"$project_name_escaped\""
 		
 		echo "Moving project to the target directory..."
-		eval "mv \"$project_name_escaped\" \"$target_dir\""		
+		eval "mv \"$project_name_escaped/\" \"$target_dir\""		
 		
 		echo "Cleaning..."	
 		rm p1_content

@@ -107,17 +107,21 @@ def generate_json_step_list(images_path):
 				file_path = os.path.join(root_file_path, subdir_file_name) #get the complete path, including the file, for the subdirs
 
 				if os.path.isfile(file_path): #If it's a valid file (should be image)
-					match_obj = re.match("(^[a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w ]+)((_--_)(.+))*.[a-zA-Z]{3}$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
+					match_obj = re.match("(^[a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w ]+)((_--_)(.+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
 					if match_obj is not None:								
+						if match_obj.group(6) is not None:
+							step_holder["step_description"] = match_obj.group(6).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
+							os.rename(file_path, os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7))) #strip out the description from the file's name					
+							file_path = os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7)) #Change the path that will be written in the TeX format
+							#~ print(file_path + "\n")		
+							#~ print("new " + os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7)) + "\n")
 						step_holder["step_title"] = match_obj.group(1).replace("_"," ") #Saves the title in json, replacing underscores by spaces for readability
 						step_holder["step_path"] = file_path #Saves the specific full path of this file												
 						if match_obj.group(2) == step_number:							
-							title_tag="\subsubsection {"
+							title_tag="\subsubsection "
 						else:
-							title_tag="\subsection {"
+							title_tag="\subsection "
 						step_holder["step_title_tag"] = title_tag #Defines if it's substep image, so subsubsection
-						if match_obj.group(6) is not None:
-							step_holder["step_description"] = match_obj.group(6).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
 							#~ print(step_holder["step_description"])
 						step_number = match_obj.group(2) #Equals next step main number													
 						steps_list.append(step_holder) #Add current json to the step list
@@ -154,8 +158,10 @@ def write_report_file(output_file, titles_list, steps_list):
 	print("\tWriting steps...")
 	for step in steps_list: #Writes down all the steps, image and titles
 		if "step_title_tag" in step: #Print all the steps within the current dir
-			output_file.write("\n\{!s}{{!s}}}}\n\
-			\\begin{{figure}}[!ht]\n\
+			if "step_description" in step: #If there's some description, use it as is
+				output_file.write(step["step_description"])
+			output_file.write("\n{!s}{{{!s}}}\n\
+			\\begin{{figure}}[H]\n\
 			\centering\n\
 			\includegraphics [scale=0.4]\n\
 			{{{!s}}}\n\
