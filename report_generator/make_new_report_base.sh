@@ -34,24 +34,24 @@ else
 		fi # if $4 param	
 		
 		echo "Renaming step images and folders..."
-		eval "./filenames_char_replace.sh \'$3\' \" \" \"_\"" #Using change space by underscore, since it's the most usal
+		eval "./filenames_char_replace.sh \"$3\" \" \" \"_\"" #Using change space by underscore, since it's the most usal
 		
 		echo "Generating TeX formats..."
-		eval "./step_report_gen.py \'$3\' p1_content" #Using fixed output file name, to reduce params
+		eval "./step_report_gen.py \"$3\" p1_content" #Using fixed output file name, to reduce params
 		
 		echo "Making a copy of the tex_report_base..."
 		eval "cp -r tex_report_base $2"
 		
 		echo "Passing Tex formats to the Tex structure..."
-		eval "cat p1_content > \'$2\'/desarrollo.tex"
+		eval "cat p1_content > $2/desarrollo.tex"
 		
 		echo "Putting name to the TeX project..."
-		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$2\3/' main.tex"
-		eval "mv \'$2\'/main.tex \'$2\'/\'$2.tex\'"
-		eval "mv \'$2\'/main.cls \'$2\'/\'$2.cls\'"		
+		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$2\3/' $2/main.tex"
+		eval "mv $2/main.tex $2/$2.tex"
+		eval "mv $2/main.cls $2/$2.cls"		
 		
 		echo "Moving project to the target directory..."
-		eval "mv \'$2\' \'$1\'"		
+		eval "mv \"$2\" \"$1\""		
 		
 		echo "Cleaning..."	
 		rm p1_content
