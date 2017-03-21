@@ -1,0 +1,39 @@
+\documentclass[12pt]{my_new_project}
+\usepackage{amssymb,amsmath,alltt,amsthm}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage{natbib}
+\usepackage{ifthen}
+%\renewcommand {\spanishtablename}{Tabla}
+%\renewcommand {\spanishlisttablename}{\'Indice de tablas} 
+\input{format_config.tex}
+
+% Se puede cambiar los siguientes parametros para modificar el acomodo del texto
+\geometry{lmargin=2.5cm,rmargin=2.5cm,tmargin=3cm,bmargin=3cm}
+\parskip= 6pt
+
+\includeonly{desarrollo, casosEstudio,conclusiones}
+\doublespacing
+
+\begin{document}
+\input{portada}
+
+\pagenumbering{roman} \setcounter{page}{1}
+\tableofcontents    % Generate Table of Contents
+%\listoffigures     % It is required if the document contains three or more tables
+
+\pagenumbering{arabic} \setcounter{page}{0}
+%\include{introduccion} 
+%\include{marcoTeorico}
+\include{desarrollo} 
+%\include{casosEstudio}
+%\include{conclusiones}
+\bibliographystyle{unsrt}     %\bibliographystyle{alpha}
+\bibliography{biblio}      
+
+\end{document}

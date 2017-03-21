@@ -1,0 +1,3073 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.11)  20 MAR 2017 21:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**my_new_project.tex
+(./my_new_project.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
+(./my_new_project.cls
+
+LaTeX Warning: You have requested document class `my_new_project',
+               but the document class provides `PMX_2016'.
+
+Document Class: PMX_2016 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@definition=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/01/29 v5.0m Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count102
+\U@D=\dimen114
+)
+\es@datefmt=\count103
+\es@quottoks=\toks29
+\es@quotdepth=\count104
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen115
+\epsfysize=\dimen116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (./format_config.tex
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@layoutwidth=\dimen121
+\Gm@layoutheight=\dimen122
+\Gm@layouthoffset=\dimen123
+\Gm@layoutvoffset=\dimen124
+\Gm@dimlist=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen125
+\captionmargin@=\dimen126
+\captionwidth=\dimen127
+\caption@tempdima=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
+)
+\c@ContinuedFloat=\count109
+))
+No file my_new_project.aux.
+\openout1 = `my_new_project.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen132
+\scratchbox=\box28
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen133
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks32
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=624.25346pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.91173pt
+* \headheight=20.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(./portada.tex
+<./imagenes/escudo_uabc_color.pdf, id=1, 803.0pt x 1157.32375pt>
+File: ./imagenes/escudo_uabc_color.pdf Graphic file (type pdf)
+
+<use ./imagenes/escudo_uabc_color.pdf>
+Package pdftex.def Info: ./imagenes/escudo_uabc_color.pdf used on input line 10
+.
+(pdftex.def)             Requested size: 240.90186pt x 347.1998pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 16.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/escudo_uabc_col
+or.pdf>])
+No file my_new_project.toc.
+\tf@toc=\write3
+\openout3 = `my_new_project.toc'.
+
+[0
+
+]
+\openout2 = `desarrollo.aux'.
+
+ (./desarrollo.tex
+Main Title 1.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \\s
+       ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.0 - New virtual machine ubuntu' not found on input 
+line 8.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 			{Step 1.0 - New virtual machine ubuntu}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.0_-_
+                                      New_virtual_machine_ubuntu.png
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.0_-_
+                                      New_virtual_machine_ubuntu.png
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 .../Step_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \\s
+        ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.1 - New virtual machine ubuntu' not found on input 
+line 17.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 			{Step 1.1 - New virtual machine ubuntu}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 ...Step_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \\s
+        ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.2 - New virtual machine ubuntu' not found on input 
+line 26.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 			{Step 1.2 - New virtual machine ubuntu}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.2_-_
+                                      New_virtual_machine_ubuntu.png
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_1.2_-_
+                                      New_virtual_machine_ubuntu.png
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 ...Step_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \\s
+        ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.0 - SelectRAMamount' not found on input line 35.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - SelectRAMamount.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 			{Step 2.0 - SelectRAMamount}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_2.0_-_
+                                      SelectRAMamount.png
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_2.0_-_
+                                      SelectRAMamount.png
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 ...t_dir/temp/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \\s
+        ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.1 - New virtual machine ubuntu' not found on input 
+line 44.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 			{Step 2.1 - New virtual machine ubuntu}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_2.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_2.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...Step_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \\s
+        ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.0 - CreatevirtualHDD' not found on input line 53.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - CreatevirtualHDD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 			{Step 3.0 - CreatevirtualHDD}
+                                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.0_-_
+                                      CreatevirtualHDD.png
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.0_-_
+                                      CreatevirtualHDD.png
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 ..._dir/temp/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \\s
+        ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.1 - New virtual machine ubuntu' not found on input 
+line 62.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 			{Step 3.1 - New virtual machine ubuntu}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.1_-_
+                                      New_virtual_machine_ubuntu.png
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ...Step_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[1
+
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \\s
+        ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.2 - New virtual machine ubuntu' not found on input 
+line 71.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 			{Step 3.2 - New virtual machine ubuntu}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.2_-_
+                                      New_virtual_machine_ubuntu.png
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_3.2_-_
+                                      New_virtual_machine_ubuntu.png
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 ...Step_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \\s
+        ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 4 - SelectVMDKHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 			{Step 4 - SelectVMDKHDD}
+                                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1508.73624pt too wide) in paragraph at lines 80--81
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_4_
+                                  -_SelectVMDKHDD.png
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_4_-_
+                                    SelectVMDKHDD.png
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_4_
+                                  -_SelectVMDKHDD.png
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_4_-_
+                                    SelectVMDKHDD.png
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 .../test_dir/temp/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \\s
+        ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 5 - DynamicHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 			{Step 5 - DynamicHDD}
+                             
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1202.7616pt too wide) in paragraph at lines 89--90
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_5_
+                                  -_DynamicHDD.png
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_5_-_
+                                    DynamicHDD.png
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_5_
+                                  -_DynamicHDD.png
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_5_-_
+                                    DynamicHDD.png
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...n{./test_dir/temp/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 \\s
+        ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 6 - SelectHDDsize' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 			{Step 6 - SelectHDDsize}
+                                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1237.975pt too wide) in paragraph at lines 98--99
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_6_
+                                  -_SelectHDDsize.png
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_6_-_
+                                    SelectHDDsize.png
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_6_
+                                  -_SelectHDDsize.png
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp/Step_6_-_
+                                    SelectHDDsize.png
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 .../test_dir/temp/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.0 - New virtual machine ubuntu' not found on input 
+line 107.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 			{Step 1.0 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.0_-_
+                                            New_virtual_machine_ubuntu.png
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.0_-_
+                                            New_virtual_machine_ubuntu.png
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+[2]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.1 - New virtual machine ubuntu' not found on input 
+line 116.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 			{Step 1.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.2 - New virtual machine ubuntu' not found on input 
+line 125.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 			{Step 1.2 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.2_-_
+                                            New_virtual_machine_ubuntu.png
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_1.2_-_
+                                            New_virtual_machine_ubuntu.png
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.0 - SelectRAMamount' not found on input line 134.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - SelectRAMamount.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 			{Step 2.0 - SelectRAMamount}
+                                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_2.0_-_
+                                            SelectRAMamount.png
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_2.0_-_
+                                            SelectRAMamount.png
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135 ...emp_dir_2/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.1 - New virtual machine ubuntu' not found on input 
+line 143.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 			{Step 2.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_2.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_2.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.0 - CreatevirtualHDD' not found on input line 152.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - CreatevirtualHDD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 			{Step 3.0 - CreatevirtualHDD}
+                                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.0_-_
+                                            CreatevirtualHDD.png
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.0_-_
+                                            CreatevirtualHDD.png
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 ...mp_dir_2/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.1 - New virtual machine ubuntu' not found on input 
+line 161.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 			{Step 3.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.1_-_
+                                            New_virtual_machine_ubuntu.png
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.162 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.2 - New virtual machine ubuntu' not found on input 
+line 170.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 			{Step 3.2 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.2_-_
+                                            New_virtual_machine_ubuntu.png
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_3.2_-_
+                                            New_virtual_machine_ubuntu.png
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 4 - SelectVMDKHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 			{Step 4 - SelectVMDKHDD}
+                                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1508.73624pt too wide) in paragraph at lines 179--180
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_4_
+                                        -_SelectVMDKHDD.png
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_4_-_
+                                          SelectVMDKHDD.png
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_4_
+                                        -_SelectVMDKHDD.png
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_4_-_
+                                          SelectVMDKHDD.png
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180 ...ir/temp_dir_2/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 5 - DynamicHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188 			{Step 5 - DynamicHDD}
+                              
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1202.7616pt too wide) in paragraph at lines 188--189
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_5_
+                                        -_DynamicHDD.png
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_5_-_
+                                          DynamicHDD.png
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_5_
+                                        -_DynamicHDD.png
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_5_-_
+                                          DynamicHDD.png
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 ...t_dir/temp_dir_2/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
+[3]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 6 - SelectHDDsize' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 			{Step 6 - SelectHDDsize}
+                                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1237.975pt too wide) in paragraph at lines 197--198
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_6_
+                                        -_SelectHDDsize.png
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_6_-_
+                                          SelectHDDsize.png
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_6_
+                                        -_SelectHDDsize.png
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/temp_dir_2/Step_6_-_
+                                          SelectHDDsize.png
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.198 ...ir/temp_dir_2/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.0 - New virtual machine ubuntu' not found on input 
+line 206.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 			{Step 1.0 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.0_-_
+                                        New_virtual_machine_ubuntu.png
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.0_-_
+                                        New_virtual_machine_ubuntu.png
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ...tep_1.0_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.1 - New virtual machine ubuntu' not found on input 
+line 215.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 			{Step 1.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.216 ...tep_1.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 1.2 - New virtual machine ubuntu' not found on input 
+line 224.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 			{Step 1.2 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.2_-_
+                                        New_virtual_machine_ubuntu.png
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_1.2_-_
+                                        New_virtual_machine_ubuntu.png
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...tep_1.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.0 - SelectRAMamount' not found on input line 233.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - SelectRAMamount.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.233 			{Step 2.0 - SelectRAMamount}
+                                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_2.0_-_
+                                        SelectRAMamount.png
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_2.0_-_
+                                        SelectRAMamount.png
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234 ...ir/tmpdir/Step_2.0_-_SelectRAMamount.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 2.1 - New virtual machine ubuntu' not found on input 
+line 242.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 			{Step 2.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_2.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_2.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.243 ...tep_2.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
+[4]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.0 - CreatevirtualHDD' not found on input line 251.
+
+
+! LaTeX Error: Unknown graphics extension: .0 - CreatevirtualHDD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.251 			{Step 3.0 - CreatevirtualHDD}
+                                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.0_-_
+                                        CreatevirtualHDD.png
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.0_-_
+                                        CreatevirtualHDD.png
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...r/tmpdir/Step_3.0_-_CreatevirtualHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.1 - New virtual machine ubuntu' not found on input 
+line 260.
+
+
+! LaTeX Error: Unknown graphics extension: .1 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.260 			{Step 3.1 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.1_-_
+                                        New_virtual_machine_ubuntu.png
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...tep_3.1_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.265 \\s
+         ubsubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `Step 3.2 - New virtual machine ubuntu' not found on input 
+line 269.
+
+
+! LaTeX Error: Unknown graphics extension: .2 - New virtual machine ubuntu.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 			{Step 3.2 - New virtual machine ubuntu}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.2_-_
+                                        New_virtual_machine_ubuntu.png
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_3.2_-_
+                                        New_virtual_machine_ubuntu.png
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...tep_3.2_-_New_virtual_machine_ubuntu.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 4 - SelectVMDKHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 			{Step 4 - SelectVMDKHDD}
+                                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1508.73624pt too wide) in paragraph at lines 278--279
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_4_
+                                    -_SelectVMDKHDD.png
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_4_-_
+                                      SelectVMDKHDD.png
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_4_
+                                    -_SelectVMDKHDD.png
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_4_-_
+                                      SelectVMDKHDD.png
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 ...st_dir/tmpdir/Step_4_-_SelectVMDKHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 5 - DynamicHDD' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 			{Step 5 - DynamicHDD}
+                              
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1202.7616pt too wide) in paragraph at lines 287--288
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_5_
+                                    -_DynamicHDD.png
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_5_-_
+                                      DynamicHDD.png
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_5_
+                                    -_DynamicHDD.png
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_5_-_
+                                      DynamicHDD.png
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288 .../test_dir/tmpdir/Step_5_-_DynamicHDD.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 \\s
+         ubsection {{!s}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: File `Step 6 - SelectHDDsize' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.296 			{Step 6 - SelectHDDsize}
+                                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1237.975pt too wide) in paragraph at lines 296--297
+ [][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_6_
+                                    -_SelectHDDsize.png
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_6_-_
+                                      SelectHDDsize.png
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_6_
+                                    -_SelectHDDsize.png
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+<argument> ./test_dir/tmpdir/Step_6_-_
+                                      SelectHDDsize.png
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.297 ...st_dir/tmpdir/Step_6_-_SelectHDDsize.png}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+)
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [5]
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [6]
+No file my_new_project.bbl.
+(./my_new_project.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ (./desarrollo.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5336 strings out of 494966
+ 75302 string characters out of 6179559
+ 149609 words of memory out of 5000000
+ 8453 multiletter control sequences out of 15000+600000
+ 11015 words of font info for 41 fonts, out of 8000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 38i,10n,43p,246b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb>
+Output written on my_new_project.pdf (8 pages, 437745 bytes).
+PDF statistics:
+ 86 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
