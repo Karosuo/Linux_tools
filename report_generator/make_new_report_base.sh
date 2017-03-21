@@ -17,15 +17,15 @@ else
 		
 		echo "Checking if already exists a folder with same project name..."
 		if [ -z "$4" ]; then
-			if [ -d "\'$1\'/\'$2\'" ]; then #If project dir already exists
+			if [ -d "\"$1\"/\"$2\"" ]; then #If project dir already exists
 				echo -e "\nAlready exists a folder with this project name and not overwrite allowed... Stoping process\n"
 				exit 1 #No overwrite allowed, terminate script							
 			fi
 		else
 			if [ "$4" == "overwrite" ]; then #Confirm wan'ts overwrite if already exists a same name folder
-				if [ -d "\'$1\'/\'$2\'" ]; then #If project dir already exists
+				if [ -d "\"$1\"/\"$2\"" ]; then #If project dir already exists
 					echo "Overwriting same project name folder..."
-					eval "rm -r \'$1\'/\'$2\'"	
+					eval "rm -r \"$1\"/\"$2\""	
 				fi
 			else
 				echo -e "\n>>Error: $4 is not a correct parameter, should be nothing or \"overwrite\", type command without params to see help\n\n"
@@ -40,15 +40,18 @@ else
 		eval "./step_report_gen.py \"$3\" p1_content" #Using fixed output file name, to reduce params
 		
 		echo "Making a copy of the tex_report_base..."
-		eval "cp -r tex_report_base $2"
+		eval "cp -r tex_report_base \"$2\""
 		
 		echo "Passing Tex formats to the Tex structure..."
-		eval "cat p1_content > $2/desarrollo.tex"
+		eval "cat p1_content > \"$2\"/desarrollo.tex"
 		
 		echo "Putting name to the TeX project..."
 		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$2\3/' $2/main.tex"
-		eval "mv $2/main.tex $2/$2.tex"
-		eval "mv $2/main.cls $2/$2.cls"		
+		eval "mv \"$2\"/main.tex \"$2\"/\"$2.tex\""
+		eval "mv \"$2\"/main.cls \"$2\"/\"$2.cls\""		
+		
+		echo "Copying the images to the project folder..."
+		eval "cp -r \"$3\" \"$2\""
 		
 		echo "Moving project to the target directory..."
 		eval "mv \"$2\" \"$1\""		
