@@ -1,6 +1,6 @@
 #!/bin/bash
 #	Takes 3 parameters, new report's target directory, new report's name, images folder container path
-#~ 		If the project's folder already exists it deletes it
+#~ 		If the project's folder already exists it stops, except if last param is specified as "overwrite"
 #	
 #		Example:
 #			make_new_report_base.sh target_dir new_project images_folder_container
@@ -11,35 +11,52 @@
 #		By Rafael Karosuo, UABC March 2017
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then #No parameters
-	echo -e "\n>>Error: Need 3 parameters, new report's target directory, new report's name, images folder container path\n\nUsage: $0 <target_directory_path> <new_report_name> <images_folder>\n\n"
+	echo -e "\n>>Error: Need at least 3 parameters, new report's target directory, new report's name, images folder container path, last param indicates if you want to overwrite an existing folder with the same name as the project\n\nUsage: $0 <target_directory_path> <new_report_name> <images_folder> [\"overwrite\"]\n\n"
 else
-	if [ -d "$1" ] && [ -d "$3" ]; then #Check if correct dirs
-		tmp="$2" #temp var, since string cut can't be done with params
-		old_char="${tmp:0:1}" #Get first char of old and new chars
-		tmp="$3"
-		new_char="${tmp:0:1}"								
-		script_path=$(eval 'pwd') #Get current script's dir
+	if [ -d "$1" ] && [ -d "$3" ]; then #Check if correct dirs, target and images
 		
-		echo "Renaming first level (dirs and files)"
-		eval "find '$1' -maxdepth 1 -iname \"*$old_char*\" | rename 's/$old_char/$new_char/g'"
+		echo "Checking if already exists a folder with same project name..."
+		if [ -z "$4" ]; then
+			if [ -d "\'$1\'/\'$2\'" ]; then #If project dir already exists
+				echo -e "\nAlready exists a folder with this project name and not overwrite allowed... Stoping process\n"
+				exit 1 #No overwrite allowed, terminate script							
+			fi
+		else
+			if [ "$4" == "overwrite" ]; then #Confirm wan'ts overwrite if already exists a same name folder
+				if [ -d "\'$1\'/\'$2\'" ]; then #If project dir already exists
+					echo "Overwriting same project name folder..."
+					eval "rm -r \'$1\'/\'$2\'"	
+				fi
+			else
+				echo -e "\n>>Error: $4 is not a correct parameter, should be nothing or \"overwrite\", type command without params to see help\n\n"
+				exit 1 #No a correct 4th param
+			fi # if correct param overwrite written
+		fi # if $4 param	
 		
-		all_dirs=$(eval "find '$1' -type d") #get all dirs, including $1 itself
-		#~ Solution by jordanm in http://stackoverflow.com/questions/11746071/how-to-split-a-multi-line-string-containing-the-characters-n-into-an-array-of		
-		arr=()
-		while read -r line; do
-			arr+=("$line")
-		done <<< "$all_dirs"
+		echo "Renaming step images and folders..."
+		eval "./filenames_char_replace.sh \'$3\' \" \" \"_\"" #Using change space by underscore, since it's the most usal
 		
-		echo "Renaming sublevels"		
-		for c_dir in "${arr[@]}"
-		do			
-			eval "find '$c_dir' -maxdepth 1 -iname \"*$old_char*\" | rename 's/$old_char/$new_char/g'"
-			echo -e "\t$c_dir"
-		done
+		echo "Generating TeX formats..."
+		eval "./step_report_gen.py \'$3\' p1_content" #Using fixed output file name, to reduce params
 		
-		#~ eval "find '$1' -maxdepth 1 -iname \"*$old_char*\" | rename 's/$old_char/$new_char/g'"
+		echo "Making a copy of the tex_report_base..."
+		eval "cp -r tex_report_base $2"
 		
+		echo "Passing Tex formats to the Tex structure..."
+		eval "cat p1_content > \'$2\'/desarrollo.tex"
+		
+		echo "Putting name to the TeX project..."
+		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$2\3/' main.tex"
+		eval "mv \'$2\'/main.tex \'$2\'/\'$2.tex\'"
+		eval "mv \'$2\'/main.cls \'$2\'/\'$2.cls\'"		
+		
+		echo "Moving project to the target directory..."
+		eval "mv \'$2\' \'$1\'"		
+		
+		echo "Cleaning..."	
+		rm p1_content
+				
 	else
-		echo -e "\n>>Error: $1 is not a valid directory name or path\nShould be absolute or relative directory path\n\n"
+		echo -e "\n>>Error: $1 or $3 are not a valid directory name or path\nShould be absolute or relative directory path\n\n"
 	fi	
 fi
