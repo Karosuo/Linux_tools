@@ -16,16 +16,28 @@ else
 	if [ -d "$1" ] && [ -d "$3" ]; then #Check if correct dirs, target and images
 		
 		echo "Checking if already exists a folder with same project name..."
-		if [ -z "$4" ]; then
-			if [ -d "\"$1\"/\"$2\"" ]; then #If project dir already exists
+				
+		target_dir=$(echo "$1" | sed -r 's/(\\)* /\\ /g')
+			
+		project_name_escaped=$(echo "$2" | sed -r 's/(\\)* /\\ /g') #Work out the spaces in the dir		
+		project_name="$2"
+		
+		images_dir=$(echo "$3" | sed -r 's/(\\)* /\\ /g')
+		
+		PROJECT_TARGET_PATH="$target_dir/$project_name_escaped"
+		
+		echo "$PROJECT_TARGET_PATH"
+		
+		if [ -z "$4" ]; then			
+			if [ -d "$PROJECT_TARGET_PATH" ]; then #If project dir already exists
 				echo -e "\nAlready exists a folder with this project name and not overwrite allowed... Stoping process\n"
 				exit 1 #No overwrite allowed, terminate script							
 			fi
 		else
 			if [ "$4" == "overwrite" ]; then #Confirm wan'ts overwrite if already exists a same name folder
-				if [ -d "\"$1\"/\"$2\"" ]; then #If project dir already exists
+				if [ -d "$PROJECT_TARGET_PATH" ]; then #If project dir already exists
 					echo "Overwriting same project name folder..."
-					eval "rm -r \"$1\"/\"$2\""	
+					eval "rm -r $PROJECT_TARGET_PATH"	
 				fi
 			else
 				echo -e "\n>>Error: $4 is not a correct parameter, should be nothing or \"overwrite\", type command without params to see help\n\n"
@@ -34,32 +46,35 @@ else
 		fi # if $4 param	
 		
 		echo "Renaming step images and folders..."
-		eval "./filenames_char_replace.sh \"$3\" \" \" \"_\"" #Using change space by underscore, since it's the most usal
+		eval "./filenames_char_replace.sh \"$images_dir\" \" \" \"_\"" #Using change space by underscore, since it's the most usal
 		
 		echo "Generating TeX formats..."
-		eval "./step_report_gen.py \"$3\" p1_content" #Using fixed output file name, to reduce params
+		eval "./step_report_gen.py \"$images_dir\" p1_content" #Using fixed output file name, to reduce params
 		
 		echo "Making a copy of the tex_report_base..."
-		eval "cp -r tex_report_base \"$2\""
+		eval "cp -r tex_report_base \"$project_name_escaped\""
 		
 		echo "Passing Tex formats to the Tex structure..."
-		eval "cat p1_content > \"$2\"/desarrollo.tex"
+		eval "cat p1_content > \"$project_name_escaped\"/desarrollo.tex"
 		
+		echo "target: $target_dir, project: $project_name_escaped, images: $images_dir"
 		echo "Putting name to the TeX project..."
-		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$2\3/' $2/main.tex"
-		eval "mv \"$2\"/main.tex \"$2\"/\"$2.tex\""
-		eval "mv \"$2\"/main.cls \"$2\"/\"$2.cls\""		
+		eval "cd \"$project_name_escaped\""
+		eval "sed -ri 's/(\\documentclass\[12pt\]\{)(.*)(\})/\1$project_name\3/' main.tex"
+		cd ..
+		eval "mv \"$project_name_escaped\"/main.tex \"$project_name_escaped\"/\"$project_name.tex\""
+		eval "mv \"$project_name_escaped\"/main.cls \"$project_name_escaped\"/\"$project_name.cls\""		
 		
 		echo "Copying the images to the project folder..."
-		eval "cp -r \"$3\" \"$2\""
+		eval "cp -r \"$images_dir\" \"$project_name_escaped\""
 		
 		echo "Moving project to the target directory..."
-		eval "mv \"$2\" \"$1\""		
+		eval "mv \"$project_name_escaped\" \"$target_dir\""		
 		
 		echo "Cleaning..."	
 		rm p1_content
 				
 	else
-		echo -e "\n>>Error: $1 or $3 are not a valid directory name or path\nShould be absolute or relative directory path\n\n"
+		echo -e "\n>>Error: $target_dir or $images_dir are not a valid directory name or path\nShould be absolute or relative directory path\n\n"
 	fi	
 fi
