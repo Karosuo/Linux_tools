@@ -1,0 +1,39 @@
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage[center,small,bf]{caption}
+
+\pagestyle{fancy}
+
+\fancyhf{} %borra todos los ajustes
+\fancyhead[R]{\bfseries\thepage} %coloca el numero de pagina a la derecha en cada capitulo en bold
+\fancyhead[L]{\bfseries\leftmark} %coloca el titulo del capitulo a la izquierda en bold
+
+% Cambia la estructura de una pagina en blanco
+\fancypagestyle{plain}{
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+}
+
+% Cambia el ancho del encabezado
+\setlength{\headwidth}{16.5cm}
+
+% Cambia el espacio para el encabezado
+\setlength{\headheight}{20pt}
+
+% Cambia el margen de los pies de figura
+\setlength{\captionmargin}{20pt}
+
+% Borra la palabra Capítulo del \chaptermark:
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre
+
+% Define comando para colocar una pagina en blanco antes de iniciar cada capítulo
+\newcommand{\paginaenblanco}{\clearpage
+\thispagestyle{empty}
+\vfill
+\newpage{\tiny {.}}
+\vfill
+\addtocounter{page}{-1}}
+%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}
+%\cleardoublepage}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
