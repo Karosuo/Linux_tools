@@ -54,7 +54,11 @@ def parse_titles_file(titles_file):
 				list_format_end = "\\end{itemize}\n" #put end list tag
 				parsed_titles.append("{!s}{!s}{!s}".format(list_format_start, array_to_string(list_format_items), list_format_end))
 				list_start_flag = False #We're no longer within a list
-			parsed_titles.append(title_types[int(match_obj_titles.group(1))-1] + match_obj_titles.group(2) + "}")
+			if int(match_obj_titles.group(1))-1 == 0: #Means it's a chapter and need to rename command
+				parsed_titles.append("\\renewcommand{\chaptername}{"+ match_obj_titles.group(2)+"}\n\
+				"+title_types[int(match_obj_titles.group(1))-1] + match_obj_titles.group(2) + "}")
+			else:
+				parsed_titles.append(title_types[int(match_obj_titles.group(1))-1] + match_obj_titles.group(2) + "}")
 			
 		elif match_obj_lists is not None: #if list			
 			if not list_start_flag: #If not title and not coming from another item, means start of list				
@@ -140,12 +144,14 @@ def write_report_file(output_file, titles_list, steps_list):
 	try:
 		output_file = open(sys.argv[2], 'w+') #Open output file as create/write or overwrite				
 	except IOError as e:
-		print "\n>>Error\nI/O error({0}): {1}".format(e.errno, e.strerror) #Mainly if no file with given name exists						
+		print "\n>>Error\nI/O error({0}): {1}".format(e.errno, e.strerror) #Mainly if no file with given name exists							
 	
+	print("\tWriting titles...")
 	for item in titles_list: #Writes down the title list onto the output file
 		output_file.write(item)
 		output_file.write("\n")
 	
+	print("\tWriting steps...")
 	for step in steps_list: #Writes down all the steps, image and titles
 		if "step_title_tag" in step: #Print all the steps within the current dir
 			output_file.write("\n\{!s}{{!s}}}}\n\
