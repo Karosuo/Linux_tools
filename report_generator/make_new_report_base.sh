@@ -13,7 +13,7 @@
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then #No parameters
 	echo -e "\n>>Error: Need 3 parameters, new report's target directory, new report's name, images folder container path\n\nUsage: $0 <target_directory_path> <new_report_name> <images_folder>\n\n"
 else
-	if [ -d "$1" ] && [ -d "$3" ]; then #Check if it's directory
+	if [ -d "$1" ] && [ -d "$3" ]; then #Check if correct dirs
 		tmp="$2" #temp var, since string cut can't be done with params
 		old_char="${tmp:0:1}" #Get first char of old and new chars
 		tmp="$3"
