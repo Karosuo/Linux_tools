@@ -107,7 +107,7 @@ def generate_json_step_list(images_path):
 				file_path = os.path.join(root_file_path, subdir_file_name) #get the complete path, including the file, for the subdirs
 
 				if os.path.isfile(file_path): #If it's a valid file (should be image)
-					match_obj = re.match("(^[a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w .\(\)\"\"]+)((_--_)([\w .\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
+					match_obj = re.match("(^[a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w.\(\)\"\"]+)((_--_)([\w.\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
 					if match_obj is not None:								
 						if match_obj.group(6) is not None:
 							step_holder["step_description"] = match_obj.group(6).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
@@ -157,9 +157,7 @@ def write_report_file(output_file, titles_list, steps_list):
 	
 	print("\tWriting steps...")
 	for step in steps_list: #Writes down all the steps, image and titles
-		if "step_title_tag" in step: #Print all the steps within the current dir
-			if "step_description" in step: #If there's some description, use it as is
-				output_file.write(step["step_description"])
+		if "step_title_tag" in step: #Print all the steps within the current dir			
 			output_file.write("\n{!s}{{{!s}}}\n\
 			\\begin{{figure}}[H]\n\
 			\centering\n\
@@ -167,6 +165,8 @@ def write_report_file(output_file, titles_list, steps_list):
 			{{{!s}}}\n\
 			\caption{{{!s}}}\n\
 			\end{{figure}}\n\n".format(step["step_title_tag"], step["step_title"], step["step_path"], step["step_title"]))
+			if "step_description" in step: #If there's some description, use it as is
+				output_file.write(step["step_description"])
 		elif "step_list_title" in step:
 			output_file.write("{!s}".format(step["step_list_title"])) #Print next list title (sub dir name)
 	output_file.close() #Close the output file
