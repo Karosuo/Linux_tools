@@ -107,7 +107,7 @@ def generate_json_step_list(images_path):
 				file_path = os.path.join(root_file_path, subdir_file_name) #get the complete path, including the file, for the subdirs
 
 				if os.path.isfile(file_path): #If it's a valid file (should be image)
-					match_obj = re.match("(^[a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w.\(\)\"\"]+)((_--_)([\w.\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
+					match_obj = re.match("^([a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w.\,\(\)\"\"]+)((_--_)([\w.\,\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
 					if match_obj is not None:								
 						if match_obj.group(6) is not None:
 							step_holder["step_description"] = match_obj.group(6).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
