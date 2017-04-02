@@ -89,6 +89,21 @@ def parse_title_from_directory(file_path):
 	tmp_parse = tmp_parse.replace("_", " ") #Take away the underscores for readability
 	return "\section {{{!s}}}".format(tmp_parse) #Put the title onto Tex title format
 
+
+#bfrief Generate the step lists, each step in a json and all the steps in a list
+#detail 
+# The subgroups in regex are
+#~ NOTE, every time another group is added to the regex, the order of'em will change
+
+#~ 1 - File name name without extension (could be directly the title)
+#~ 2 - Complete step number, including floating part if it has, if it don't it's the same as group 3
+#~ 3 - Integer part of the step number
+#~ 4 - Floating part of the step number, if it doesn't have one is None
+#~ 5 - "_--_" + the description string, it's just to be able to put an 0 or more in that group, if no description this group is None
+#~ 6 - "_--_" ONLY, if no description, this is None
+#~ 7 - The description string only
+#~ 8 - The file extention
+#~ 
 def generate_json_step_list(images_path):
 	step_number = 0 #Holds the main step number, if it repeats means there's some subnum				
 	for file_name in os.listdir(images_path): #Walk through dir						
@@ -107,23 +122,24 @@ def generate_json_step_list(images_path):
 				file_path = os.path.join(root_file_path, subdir_file_name) #get the complete path, including the file, for the subdirs
 
 				if os.path.isfile(file_path): #If it's a valid file (should be image)
-					match_obj = re.match("^([a-zA-Z]{4}_(\d{1,2})(\.\d{1,2})*_[^a-zA-Z\d]_[\w.\,\(\)\"\"]+)((_--_)([\w.\,\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
+					match_obj = re.match("^([a-zA-Z]{4}_((\d{1,2})(\.\d{1,2})*)_[^a-zA-Z\d]_[\w.\,\(\)\"\"]+)((_--_)([\w.\,\(\)\"\"]+))*.([a-zA-Z]{3})$", subdir_file_name) #Get the regex match object, only the files with "stepish" title					
 					if match_obj is not None:								
-						if match_obj.group(6) is not None:
-							step_holder["step_description"] = match_obj.group(6).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
-							os.rename(file_path, os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7))) #strip out the description from the file's name					
-							file_path = os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7)) #Change the path that will be written in the TeX format
+						if match_obj.group(7) is not None:
+							step_holder["step_description"] = match_obj.group(7).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
+							os.rename(file_path, os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(8))) #strip out the description from the file's name					
+							file_path = os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(8)) #Change the path that will be written in the TeX format
 							#~ print(file_path + "\n")		
 							#~ print("new " + os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7)) + "\n")
 						step_holder["step_title"] = match_obj.group(1).replace("_"," ") #Saves the title in json, replacing underscores by spaces for readability
 						step_holder["step_path"] = file_path #Saves the specific full path of this file												
-						if match_obj.group(2) == step_number:							
+						if match_obj.group(3) == step_number:
 							title_tag="\subsubsection "
 						else:
 							title_tag="\subsection "
 						step_holder["step_title_tag"] = title_tag #Defines if it's substep image, so subsubsection
 							#~ print(step_holder["step_description"])
-						step_number = match_obj.group(2) #Equals next step main number													
+						step_number = match_obj.group(3) #Equals next step main number
+						step_holder["step_number"] = float(match_obj.group(2)) #Saves in the json the step number, to be able to order the list later						
 						steps_list.append(step_holder) #Add current json to the step list
 	return steps_list
 	
@@ -144,9 +160,9 @@ def get_titles_list(images_path):
 		return titles_list
 
 
-def write_report_file(output_file, titles_list, steps_list):
+def write_report_file(output_file, output_file_name, titles_list, steps_list):
 	try:
-		output_file = open(sys.argv[2], 'w+') #Open output file as create/write or overwrite				
+		output_file = open(output_file_name, 'w+') #Open output file as create/write or overwrite				
 	except IOError as e:
 		print "\n>>Error\nI/O error({0}): {1}".format(e.errno, e.strerror) #Mainly if no file with given name exists							
 	
@@ -176,11 +192,11 @@ def write_report_file(output_file, titles_list, steps_list):
 # the_list is the list to be ordered
 # str_parameter_key is the dictionary's value key to order by
 # If the parameters are other than a list and a string as key, returns None
-def order_dict_list_by_value(the_list, str_parameter_key)
-	if type(parameter_key) is str and type(the_list) is list:
-		return sorted(the_list, key=lambda k: k[str_parameter_key])
+def order_dict_list_by_value(the_list, str_parameter_key):
+	if type(str_parameter_key) is str and type(the_list) is list:
+		return sorted(the_list, key=lambda k: 0 if str_parameter_key not in k else k[str_parameter_key])
 	return None
-	
+
 try:
 	if len(sys.argv) == 3: #If at least two params passed
 		images_path = sys.argv[1]
@@ -197,7 +213,8 @@ try:
 					
 			print("Writing all the formatted text the output file...")
 			#Writes down the report, titles, objective and images block
-			write_report_file(output_file, titles_list, steps_list)					
+			steps_list = order_dict_list_by_value(steps_list, "step_number") #Sort the step list
+			write_report_file(output_file, sys.argv[2], titles_list, steps_list)					
 			
 		else:
 			print("\n>>Error\nPath provided is not a valid directory\n\n") #Complains if "images" directory doesn't exist or similar
