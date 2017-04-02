@@ -171,6 +171,16 @@ def write_report_file(output_file, titles_list, steps_list):
 			output_file.write("{!s}".format(step["step_list_title"])) #Print next list title (sub dir name)
 	output_file.close() #Close the output file
 
+
+#brief Order a dictionary list by the value of one parameter of the dictionary
+# the_list is the list to be ordered
+# str_parameter_key is the dictionary's value key to order by
+# If the parameters are other than a list and a string as key, returns None
+def order_dict_list_by_value(the_list, str_parameter_key)
+	if type(parameter_key) is str and type(the_list) is list:
+		return sorted(the_list, key=lambda k: k[str_parameter_key])
+	return None
+	
 try:
 	if len(sys.argv) == 3: #If at least two params passed
 		images_path = sys.argv[1]
