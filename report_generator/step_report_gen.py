@@ -104,8 +104,8 @@ def parse_title_from_directory(file_path):
 #~ 7 - The description string only
 #~ 8 - The file extention
 #~ 
-def generate_json_step_list(images_path):
-	step_number = 0 #Holds the main step number, if it repeats means there's some subnum				
+def generate_json_step_list(images_path):	
+	steps_list = [] #Define the list
 	for file_name in os.listdir(images_path): #Walk through dir						
 		root_file_path = os.path.join(images_path, file_name) #get the complete path, including the file		
 		
@@ -128,20 +128,22 @@ def generate_json_step_list(images_path):
 							step_holder["step_description"] = match_obj.group(7).replace("_"," ") #Save the step description, replacing underscores for spaces for readibility
 							os.rename(file_path, os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(8))) #strip out the description from the file's name					
 							file_path = os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(8)) #Change the path that will be written in the TeX format
-							#~ print(file_path + "\n")		
-							#~ print("new " + os.path.join(root_file_path, match_obj.group(1) + "." + match_obj.group(7)) + "\n")
 						step_holder["step_title"] = match_obj.group(1).replace("_"," ") #Saves the title in json, replacing underscores by spaces for readability
 						step_holder["step_path"] = file_path #Saves the specific full path of this file												
-						if match_obj.group(3) == step_number:
-							title_tag="\subsubsection "
-						else:
-							title_tag="\subsection "
-						
-						step_holder["step_title_tag"] = title_tag #Defines if it's substep image, so subsubsection
-							#~ print(step_holder["step_description"])
-						step_number = match_obj.group(3) #Equals next step main number
 						step_holder["step_number"] = float(match_obj.group(2)) #Saves in the json the step number, to be able to order the list later						
 						steps_list.append(step_holder) #Add current json to the step list
+
+	steps_list = order_dict_list_by_value(steps_list, "step_number") #Order the list asc
+	step_number = 0 #Holds the main step number, if it repeats means there's some subnum						
+	for step in steps_list:
+		if "step_list_title" not in step:
+			if int(step["step_number"]) == step_number:
+				title_tag="\subsubsection "
+			else:
+				title_tag="\subsection "
+			
+			step["step_title_tag"] = title_tag #Defines if it's substep image, so subsubsection						
+			step_number = int(step["step_number"]) #Equals next step main number
 	return steps_list
 	
 
@@ -214,7 +216,6 @@ try:
 					
 			print("Writing all the formatted text the output file...")
 			#Writes down the report, titles, objective and images block
-			steps_list = order_dict_list_by_value(steps_list, "step_number") #Sort the step list
 			write_report_file(output_file, sys.argv[2], titles_list, steps_list)					
 			
 		else:
