@@ -136,6 +136,7 @@ def generate_json_step_list(images_path):
 							title_tag="\subsubsection "
 						else:
 							title_tag="\subsection "
+						
 						step_holder["step_title_tag"] = title_tag #Defines if it's substep image, so subsubsection
 							#~ print(step_holder["step_description"])
 						step_number = match_obj.group(3) #Equals next step main number
@@ -177,7 +178,7 @@ def write_report_file(output_file, output_file_name, titles_list, steps_list):
 			output_file.write("\n{!s}{{{!s}}}\n\
 			\\begin{{figure}}[H]\n\
 			\centering\n\
-			\includegraphics [scale=0.4]\n\
+			\includegraphics [scale=0.7]\n\
 			{{{!s}}}\n\
 			\caption{{{!s}}}\n\
 			\end{{figure}}\n\n".format(step["step_title_tag"], step["step_title"], step["step_path"], step["step_title"]))
