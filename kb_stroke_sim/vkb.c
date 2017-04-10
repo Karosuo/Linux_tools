@@ -18,6 +18,7 @@
  * 		ascii table - http://www.asciitable.com/
  * 		doxygen comment style - https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html
  * 		WINVER number representations - https://msdn.microsoft.com/en-us/library/6sehtctf.aspx
+ * 		char to virtual key translator funct (VkKeyScanEx) - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646332(v=vs.85).aspx
  * 	
  * 	By Rafael Karosuo rafaelkarosuo@gmail.com
  * */
@@ -40,17 +41,19 @@
 	}
 #elif _WIN32
 	/// Brief wrapper function to simulate vkb on windows systems
-	int kb_print_char(char key)
+	int kb_print_char(char c_key)
 	{
+		/*** 0x0409 is the US english layout, KLF_ACTIVATE is load the layout if not loaded */
+		short int v_key = VkKeyScanEx(c_key, LoadKeyboardLayout(0x0409, KLF_ACTIVATE)); ///< Translate char to virtual key code (lower byte is key code, higher byte is the shift state)
+		
 		//~ printf("\nHello World Windows + char: %c\n", key);
 		INPUT in_struct; ///< Declare an INPUT structure, to know which type will be, mouse, kb or other hdw
 		in_struct.type = INPUT_KEYBOARD; ///< INPUT_KEYBOARD is an enum (num 1) and should be combined with "ki" struct
 		in_struct.ki.wScan = 0;
 		in_struct.ki.time = 0;
 		in_struct.ki.dwExtraInfo = 0;
-
-			// Press the "A" key
-		in_struct.ki.wVk = key; // virtual-key code for the "a" key
+		
+		in_struct.ki.wVk = v_key; // virtual-key code for the "a" key
 		in_struct.ki.dwFlags = 0; // 0 for key press
 		SendInput(1, &in_struct, sizeof(INPUT));
 	 
