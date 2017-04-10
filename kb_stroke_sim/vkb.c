@@ -49,18 +49,29 @@
 		//~ printf("\nHello World Windows + char: %c\n", key);
 		INPUT in_struct; ///< Declare an INPUT structure, to know which type will be, mouse, kb or other hdw
 		in_struct.type = INPUT_KEYBOARD; ///< INPUT_KEYBOARD is an enum (num 1) and should be combined with "ki" struct
-		in_struct.ki.wScan = 0;
-		in_struct.ki.time = 0;
-		in_struct.ki.dwExtraInfo = 0;
-		
-		in_struct.ki.wVk = v_key; // virtual-key code for the "a" key
+		in_struct.ki.time = 0; ///< 0 means let the OS put it's own time stamp
+		in_struct.ki.wVk = v_key; // virtual-key code, use the sent char param
 		in_struct.ki.dwFlags = 0; // 0 for key press
-		SendInput(1, &in_struct, sizeof(INPUT));
-	 
-		// Release the "A" key
+		in_status = SendInput(1, &in_struct, sizeof(INPUT)); ///< Indicates only 1 input
+		if(in_status == 0)
+			return 0; ///< don't try to lift the key since resource is blocked
 		in_struct.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
 		SendInput(1, &in_struct, sizeof(INPUT));
-		return 0;
+		return in_status; ///< return the number of succesfull insertions
+	}
+	
+	/// Brief Wrapper of the kb_print_char function, to be able to print strings in a faster way
+	int kb_print_str(char * str)
+	{
+		Sleep(7000);
+		while(*str)
+		{
+			char key = *str;
+			printf("%c", key);
+			kb_print_char(key);
+			str++;			
+			// printf("%x", *str++);
+		}
 	}
 #endif
 
@@ -70,11 +81,8 @@ int main(int argc, char * argv[])
 	if(argc == 2)///< Should be ONLY one parameter
 	{
 		//~ printf("The param: %s", argv[1]);
-		char counter = 0;
-		while(counter < 10){
-			kb_print_char(0x41 + counter);
-			counter++;
-		}		
+		kb_print_str(argv[1]);		
+		// kb_print_char('Q');
 	}
 	else
 	{
