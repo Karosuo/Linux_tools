@@ -50,13 +50,13 @@
 		in_struct.ki.dwExtraInfo = 0;
 
 			// Press the "A" key
-		ip.ki.wVk = key; // virtual-key code for the "a" key
-		ip.ki.dwFlags = 0; // 0 for key press
-		SendInput(1, &ip, sizeof(INPUT));
+		in_struct.ki.wVk = key; // virtual-key code for the "a" key
+		in_struct.ki.dwFlags = 0; // 0 for key press
+		SendInput(1, &in_struct, sizeof(INPUT));
 	 
 		// Release the "A" key
-		ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
-		SendInput(1, &ip, sizeof(INPUT));
+		in_struct.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+		SendInput(1, &in_struct, sizeof(INPUT));
 		return 0;
 	}
 #endif
