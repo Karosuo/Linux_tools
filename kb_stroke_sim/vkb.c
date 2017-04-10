@@ -49,6 +49,15 @@
 
 int main(int argc, char * argv[])
 {
+	if(argc > 1)
+	{
+		printf("\nTested...\n");
+	}
+	else
+	{
+		printf("\n\n>> Error: Need one string parameter\n\nUsage: %s \"the_string_to_print\"\n\n", argv[0]);
+		return -1; ///Return generic error code
+	}
 	kb_print_char('A');
 	return 0; ///Return OK code
 }
