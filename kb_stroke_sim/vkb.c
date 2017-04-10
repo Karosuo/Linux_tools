@@ -44,9 +44,8 @@
 	int kb_print_char(char c_key)
 	{
 		/*** 0x0409 is the US english layout, KLF_ACTIVATE is load the layout if not loaded */
-		short int v_key = VkKeyScanEx(c_key, LoadKeyboardLayout(0x0409, KLF_ACTIVATE)); ///< Translate char to virtual key code (lower byte is key code, higher byte is the shift state)
-		
-		//~ printf("\nHello World Windows + char: %c\n", key);
+		short int v_key = VkKeyScanEx(c_key, LoadKeyboardLayout("0x0409", KLF_ACTIVATE)); ///< Translate char to virtual key code (lower byte is key code, higher byte is the shift state)
+		int in_status = 0; ///< Holds the SendInput return, 0 is device already blocked by another threat, different means that amount of times the correct inputs
 		INPUT in_struct; ///< Declare an INPUT structure, to know which type will be, mouse, kb or other hdw
 		in_struct.type = INPUT_KEYBOARD; ///< INPUT_KEYBOARD is an enum (num 1) and should be combined with "ki" struct
 		in_struct.ki.time = 0; ///< 0 means let the OS put it's own time stamp
@@ -64,13 +63,9 @@
 	int kb_print_str(char * str)
 	{
 		Sleep(7000);
-		while(*str)
+		while(*str)///< Iterates over the array, as it's null terminated
 		{
-			char key = *str;
-			printf("%c", key);
-			kb_print_char(key);
-			str++;			
-			// printf("%x", *str++);
+			kb_print_char(*str++); ///< Point to the current address, get's it's content and after that, adds the address
 		}
 	}
 #endif
@@ -80,9 +75,7 @@ int main(int argc, char * argv[])
 {
 	if(argc == 2)///< Should be ONLY one parameter
 	{
-		//~ printf("The param: %s", argv[1]);
 		kb_print_str(argv[1]);		
-		// kb_print_char('Q');
 	}
 	else
 	{
