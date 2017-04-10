@@ -27,18 +27,22 @@
 /***
  * The idea is to make a transparent kb_print_char function to develop cross-platform code and only update if needed in the function declaration
  * for the specific OS
+ * 
+ * Both return int as a status
  * */
 #ifdef __linux__
 	/// Brief wrapper function to simulate vkb on linux systems
-	kb_print_char(char key)
+	int kb_print_char(char key)
 	{
 		printf("Hello World Linux + char: %c", key);
+		return 0;
 	}
 #elif _WIN32
 	/// Brief wrapper function to simulate vkb on windows systems
-	kb_print_char(char key)
+	int kb_print_char(char key)
 	{
 		printf("Hello World Windows + char: %c", key);
+		return 0;
 	}
 #endif
 

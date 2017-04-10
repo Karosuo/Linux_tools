@@ -6,7 +6,7 @@
 #endif
 
 /// Brief wrapper function to print a string using kb_print_char
-kb_print_str(char * str);
+int kb_print_str(char * str);
 /// Brief single call to sendInput or xxx, in windows or linux systems respectively
 /// Details Only simulates a hit and release of a character key, doesn't support the long press or combinations
-kb_print_char(char key);
+int kb_print_char(char key);
