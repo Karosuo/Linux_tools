@@ -16,7 +16,35 @@
  * 		INPUT structure - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646270(v=vs.85).aspx
  *		SendInput function - https://msdn.microsoft.com/es-es/library/windows/desktop/ms646310(v=vs.85).aspx
  * 		ascii table - http://www.asciitable.com/
+ * 		doxygen comment style - https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html
  * 	
  * 	By Rafael Karosuo rafaelkarosuo@gmail.com
  * */
 #include "vkb.h"
+#include <stdio.h>
+
+
+/***
+ * The idea is to make a transparent kb_print_char function to develop cross-platform code and only update if needed in the function declaration
+ * for the specific OS
+ * */
+#ifdef __linux__
+	/// Brief wrapper function to simulate vkb on linux systems
+	kb_print_char(char key)
+	{
+		printf("Hello World Linux + char: %c", key);
+	}
+#elif _WIN32
+	/// Brief wrapper function to simulate vkb on windows systems
+	kb_print_char(char key)
+	{
+		printf("Hello World Windows + char: %c", key);
+	}
+#endif
+
+
+int main(int argc, char * argv[])
+{
+	kb_print_char('A');
+	return 0; ///Return OK code
+}
