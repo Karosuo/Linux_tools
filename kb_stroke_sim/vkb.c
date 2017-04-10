@@ -2,7 +2,7 @@
  *  Independent module that receives a string as parameter and send it to the OS as virtual keyboard
  * 	The characters as expected as basic ASCII, no accents or other unicode characters tested, but sendInput in windows support thouse tho
  * 	
- * 	It supports Windows systems from 2000, in 32 and 64 formats, as well as linux 64 systems
+ * 	It supports Windows systems from 2000, in 32 bit systems (which also run in x64), as well as linux x64 versions only
  * 
  * 	The parameters can be passed as command line ones, in the project is used by a python script with the following format
  * 	from subprocess import call
@@ -17,6 +17,7 @@
  *		SendInput function - https://msdn.microsoft.com/es-es/library/windows/desktop/ms646310(v=vs.85).aspx
  * 		ascii table - http://www.asciitable.com/
  * 		doxygen comment style - https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html
+ * 		WINVER number representations - https://msdn.microsoft.com/en-us/library/6sehtctf.aspx
  * 	
  * 	By Rafael Karosuo rafaelkarosuo@gmail.com
  * */
@@ -34,14 +35,28 @@
 	/// Brief wrapper function to simulate vkb on linux systems
 	int kb_print_char(char key)
 	{
-		printf("Hello World Linux + char: %c", key);
+		printf("\nHello World Linux + char: %c\n", key);
 		return 0;
 	}
 #elif _WIN32
 	/// Brief wrapper function to simulate vkb on windows systems
 	int kb_print_char(char key)
 	{
-		printf("Hello World Windows + char: %c", key);
+		//~ printf("\nHello World Windows + char: %c\n", key);
+		INPUT in_struct; ///< Declare an INPUT structure, to know which type will be, mouse, kb or other hdw
+		in_struct.type = INPUT_KEYBOARD; ///< INPUT_KEYBOARD is an enum (num 1) and should be combined with "ki" struct
+		in_struct.ki.wScan = 0;
+		in_struct.ki.time = 0;
+		in_struct.ki.dwExtraInfo = 0;
+
+			// Press the "A" key
+		ip.ki.wVk = key; // virtual-key code for the "a" key
+		ip.ki.dwFlags = 0; // 0 for key press
+		SendInput(1, &ip, sizeof(INPUT));
+	 
+		// Release the "A" key
+		ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+		SendInput(1, &ip, sizeof(INPUT));
 		return 0;
 	}
 #endif
@@ -51,8 +66,12 @@ int main(int argc, char * argv[])
 {
 	if(argc == 2)///< Should be ONLY one parameter
 	{
-		printf("The param: %s", argv[1]);
-		kb_print_char('A');
+		//~ printf("The param: %s", argv[1]);
+		char counter = 0;
+		while(counter < 10){
+			kb_print_char(0x41 + counter);
+			counter++;
+		}		
 	}
 	else
 	{
