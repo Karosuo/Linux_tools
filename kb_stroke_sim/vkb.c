@@ -39,25 +39,22 @@
 		return 0;
 	}
 #elif _WIN32
-	/// Brief wrapper function to simulate vkb on windows systems
+	/// Brief Minimum wrapper function to simulate vkb on windows systems
 	int kb_print_char(char key)
 	{
+		unsigned int in_status = 0; ///< Holds the return status from SendInput, 0 is input was already blocked by another thread, non zero is the amount of succesfull inserted events
 		//~ printf("\nHello World Windows + char: %c\n", key);
 		INPUT in_struct; ///< Declare an INPUT structure, to know which type will be, mouse, kb or other hdw
 		in_struct.type = INPUT_KEYBOARD; ///< INPUT_KEYBOARD is an enum (num 1) and should be combined with "ki" struct
-		in_struct.ki.wScan = 0;
-		in_struct.ki.time = 0;
-		in_struct.ki.dwExtraInfo = 0;
-
-			// Press the "A" key
-		in_struct.ki.wVk = key; // virtual-key code for the "a" key
+		in_struct.ki.time = 0; ///< 0 means let the OS put it's own time stamp
+		in_struct.ki.wVk = key; // virtual-key code, use the sent char param
 		in_struct.ki.dwFlags = 0; // 0 for key press
-		SendInput(1, &in_struct, sizeof(INPUT));
-	 
-		// Release the "A" key
+		in_status = SendInput(1, &in_struct, sizeof(INPUT)); ///< Indicates only 1 input
+		if(in_status == 0)
+			return 0; ///< don't try to lift the key since resource is blocked
 		in_struct.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
 		SendInput(1, &in_struct, sizeof(INPUT));
-		return 0;
+		return in_status; ///< return the number of succesfull insertions
 	}
 #endif
 
