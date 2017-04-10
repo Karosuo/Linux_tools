@@ -56,6 +56,20 @@
 		SendInput(1, &in_struct, sizeof(INPUT));
 		return in_status; ///< return the number of succesfull insertions
 	}
+	
+	/// Brief Wrapper of the kb_print_char function, to be able to print strings in a faster way
+	int kb_print_str(char * str)
+	{
+		Sleep(7000);
+		while(*str)
+		{
+			char key = *str;
+			printf("%c", key);
+			kb_print_char(key);
+			str++;			
+			// printf("%x", *str++);
+		}
+	}
 #endif
 
 
@@ -64,11 +78,8 @@ int main(int argc, char * argv[])
 	if(argc == 2)///< Should be ONLY one parameter
 	{
 		//~ printf("The param: %s", argv[1]);
-		char counter = 0;
-		while(counter < 10){
-			kb_print_char(0x41 + counter);
-			counter++;
-		}		
+		kb_print_str(argv[1]);		
+		// kb_print_char('Q');
 	}
 	else
 	{
