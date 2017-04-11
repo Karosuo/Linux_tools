@@ -11,7 +11,11 @@
  * 	Part of a project in UABC that needed a virtual kb interface, FCQI, Computer Engineering 2017-1
  * 	date: apr - 9 - 17
  * 
- * 	For the linux part, install libxdo "sudo apt-get install libxdo-dev libxdo2", since xdotool is a bash tool not a C library
+ * 	For the linux part, install libxdo "sudo apt-get install libxdo-dev libxdo3", since xdotool is a bash tool not a C library
+ * 	needed to add deb http://ubuntu.cs.utah.edu/ubuntu trusty main universe to /etc/apt/sources.list, or other repo from
+ * 	http://packages.ubuntu.com/precise/amd64/libxdo2/download
+ * 
+ * 	In Ubuntu 14.04 or later, libxdo3 is the version available
  * 
  * 	Some useful reference:
  * 		KEYBDINPUT structure - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646271(v=vs.85).aspx
@@ -22,6 +26,7 @@
  * 		WINVER number representations - https://msdn.microsoft.com/en-us/library/6sehtctf.aspx
  * 		char to virtual key translator funct (VkKeyScanEx) - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646332(v=vs.85).aspx
  * 
+ * 		#ALERT! this page has outdated function names, available on libxdo2, to see current names check xdo.h on your system
  * 		xdotool online ref - http://www.semicomplete.com/files/xdotool/docs/html/xdo_8h.html
  * 	
  * 	By Rafael Karosuo rafaelkarosuo@gmail.com
