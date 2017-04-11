@@ -37,22 +37,39 @@
  * Both return int as a status
  * */
 #ifdef __linux__
-	/// Brief wrapper function to simulate vkb on ubuntu systems using xdotool
+	/// Brief Wrapper function of the kb_print_str, sending a 1 length string
 	/**
+	 * It prints only one character, xdo has a string prefab function and not an only one char available and as we need to keep the transparent 
+	 * interface we need to build a one char length string and print it simulating an only one char function
 	 * @param c_key is the character to print using keyboard simulation
 	 * */
+	
+	char key_wrapper[1]; ///< xdo_type needs a pointer, this is to be able to keep the transparent interface of kb_print_char	
+	
 	int kb_print_char(char key)
-	{
-		char key_wrapper[1]; ///< xdo_type needs a pointer, this is to be able to keep the transparent interface of kb_print_char
+	{	
+		//~ xdo_t * xdo_instance = xdo_new(":0.0"); ///< Create new xdo instance and null param indicates that uses env var DISPLAY, also could be used ":0.0"
+		
 		*key_wrapper = key;
+		printf("key: %s", key_wrapper);
+		return kb_print_str(key_wrapper);		
+	}
+	
+	/// Brief Wrapper function to send a string of chars to the current window, simulating a keyboard in ubuntu like systems
+	/**
+	 * @param *str is the not constant char pointer to the string that will be printed using the kb simulation
+	 * */
+	int kb_print_str(char * str)
+	{
 		xdo_t * xdo_instance = xdo_new(NULL); ///< Create new xdo instance and null param indicates that uses env var DISPLAY, also could be used ":0.0"
-		xdo_type(xdo_instance, CURRENTWINDOW, key_wrapper, 0); ///< Send a string to the current window, check xdotool ref
-		return 1; ///< As windows sendinput return 0 means error, we need to return the number of correct succesful insertions
+		xdo_enter_text_window(xdo_instance, CURRENTWINDOW, str, 0); ///< Send a string to the current window, check xdotool ref
+		return 1;///< As windows sendinput return 0 means error, we need to return the number of correct succesful insertions
 	}
 
 #elif _WIN32
-	/// Brief wrapper function to simulate vkb on windows systems
+	/// Brief wrapper function to simulate one char key hit on windows systems
 	/**
+	 * Uses the SendInput function from windows.h
 	 * @param c_key is the character to print using keyboard simulation
 	 * */
 	int kb_print_char(char c_key)
@@ -72,26 +89,26 @@
 		SendInput(1, &in_struct, sizeof(INPUT));
 		return in_status; ///< return the number of succesful insertions
 	}
-#endif
-
-/// Brief Wrapper of the kb_print_char function, to be able to print strings in a faster way
-/**
- * @param *str is the not constant char pointer to the string that will be printed using the kb simulation
- * */
-int kb_print_str(char * str)
-{
-	while(*str)///< Iterates over the array, as it's null terminated
+	
+	/// Brief Wrapper of the kb_print_char function, to be able to print strings in a single way
+	/**
+	 * @param *str is the not constant char pointer to the string that will be printed using the kb simulation
+	 * */
+	int kb_print_str(char * str)
 	{
-		kb_print_char(*str++); ///< Point to the current address, get's it's content and after that, adds the address
+		while(*str)///< Iterates over the array, as it's null terminated
+		{
+			kb_print_char(*str++); ///< Point to the current address, get's it's content and after that, adds the address
+		}
 	}
-}
+#endif
 
 
 int main(int argc, char * argv[])
 {
 	if(argc == 2)///< Should be ONLY one parameter
 	{
-		kb_print_str(argv[1]);		
+		kb_print_str(argv[1]);						
 	}
 	else
 	{
