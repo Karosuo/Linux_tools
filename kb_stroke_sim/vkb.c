@@ -17,6 +17,9 @@
  * 
  * 	In Ubuntu 14.04 or later, libxdo3 is the version available
  * 
+ * 	to compile in linux "gcc vkb.c -lxdo -o vkb_linux32"
+ * 	to compile in windows with mingw "gcc vkb.c -o vkb_w32.exe"
+ * 
  * 	Some useful reference:
  * 		KEYBDINPUT structure - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646271(v=vs.85).aspx
  * 		INPUT structure - https://msdn.microsoft.com/en-us/library/windows/desktop/ms646270(v=vs.85).aspx
