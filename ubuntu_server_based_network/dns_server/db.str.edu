@@ -1,0 +1,13 @@
+;
+; BIND data file for LAN in str.edu
+;
+$TTL	604800
+@	IN	SOA	ubuntu-server.str.edu. my_email.str.edu. (
+			 2017052210	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+@	IN	NS	ubuntu-server.str.edu.
+ubuntu-server.str.edu.	IN	A	10.0.10.1
+@	IN	AAAA	::1

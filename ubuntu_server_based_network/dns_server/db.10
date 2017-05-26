@@ -1,0 +1,13 @@
+;
+; BIND reverse data file for str.edu
+
+$TTL	604800
+@	IN	SOA	ubuntu-server.str.edu. my_mail.str.edu. (
+			 2017052210	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ubuntu-server.str.edu.
+1.10.0.10.str.edu.	IN	PTR	ubuntu-server.str.edu.
