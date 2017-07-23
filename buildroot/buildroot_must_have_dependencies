@@ -18,3 +18,5 @@
 – file (must be in /usr/bin/file)
 – bc
 – wget
+– graphviz (to use graph-depends and <pkg>-graph-depends)
+– python-matplotlib
