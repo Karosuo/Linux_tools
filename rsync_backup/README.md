@@ -18,9 +18,33 @@ or
 
 >/home/my_dir/
 
-
 It could be multiple directories as source and/or as destiny
 but at least must be one of each
+
+### Important Note ###
+
+As in rsync man page is noted:
+
+>A  trailing slash on the source changes this behavior to avoid creating
+>an additional directory level at the destination.  You can think  of  a
+>trailing / on a source as meaning "copy the contents of this directory"
+>as opposed to "copy the directory by  name",  but  in  both  cases  the
+>attributes  of the containing directory are transferred to the contain‐
+>ing directory on the destination.  In other words, each of the  follow‐
+>ing  commands copies the files in the same way, including their setting
+>of the attributes of /dest/foo:
+
+>  `rsync -av /src/foo /dest`
+
+>  `rsync -av /src/foo/ /dest/foo`
+
+>Note also that host and module  references  don’t  require  a  trailing
+>slash to copy the contents of the default directory.  For example, both
+>of these copy the remote directory’s contents into "/dest":
+
+>  `rsync -av host: /dest`
+  
+>  `rsync -av host::module /dest`
 
 # Options used from rsync:
 - **a**: archive
