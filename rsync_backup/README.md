@@ -1,4 +1,6 @@
 # Performs a backup using rsync
+Copy content from source folders to destiny folders (same order that they appear, first source folder content to the first destiny folder, second with second, and so forth)
+
 ## Parameters are:
 1. If the destiny is compressed (*Optional*, `--compressed`)
 2. Source list of paths (*Mandatory, File of dir pathd, one per line, absolute or relative to the current script dir*)
